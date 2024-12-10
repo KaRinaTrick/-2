@@ -4,11 +4,12 @@ calls = 0
 def count_calls():
     global calls
     calls += 1
-    
+
 
 
 def string_info(string):
-    print((len(string)), string.upper(), string.lower())
+    string = ((len(string)), string.upper(), string.lower())
+    print(tuple(string))
     count_calls()
 
 
