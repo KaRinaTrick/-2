@@ -1,6 +1,6 @@
 def send_email (message, recipient, *, sender = "university.help@gmail.com"):
     end_file = (".com",".ru",".net")
-    if_end = sender.endswith(end_file, -4) == recipient.endswith(end_file, -4) #пометка для себя - не обязательно все писать в условии, можно создать отдельные переменные!!!!!!!!!!!!!
+    if_end = sender.endswith(end_file, -4) == recipient.endswith(end_file, -4)
     if if_end is not True:
         if recipient.count('@') == 1 and sender.count('@') == 1:
             print(f"Невозможно отправить письмо с адреса {sender} на адрес {recipient}")
