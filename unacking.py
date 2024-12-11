@@ -14,17 +14,3 @@ print_params(**values_dict)
 values_list_2 = [54.32, 'Строка' ]
 print_params(*values_list_2, 42)
 
-
-# def append_to_list(item, list_my=None):
-#   if list_my is None:
-#    list_my = []
-#   list_my.append(item)
-# print(list_my)
-
-# Важно!
-#
-# Не передавайте списки задавая по умолчанию пустой список или другой изменяемый тип данных!
-#
-# В таком случае, если этот список будет изменён внутри функции, то на следующий вызов функции он останется в том же состоянии.
-#
-# def a(my_list = [])) – это приводит к ошибкам!
